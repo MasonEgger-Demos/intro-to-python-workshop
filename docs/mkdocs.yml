@@ -1,0 +1,56 @@
+site_name: Introduction to Python Workshop
+site_description: A Python Introduction course
+site_author: Mason Egger
+site_url: https://mycoolsiterepo.com
+repo_name: Zelgius/intro-to-python-workshop
+repo_url: https://github.com/Zelgius/intro-to-python-workshop
+theme:
+    name: readthedocs
+nav:
+    - Home: index.md
+    - Python 101 - Introduction:
+        - Introduction: intros/python101.md
+        - What is Python: about/index.md
+        - Developer Environments: environments/index.md
+        - Getting Started: getting-started/index.md
+        - Practice Problems: assignments/python101.md
+#    - Python 102 - Use Cases:
+#        - Web Development: web/index.md
+#        - Data Science and Machine Learning: dsml/index.md
+#        - Systems Admistration and DevOps: sysadm/index.md
+#    - Python 201:
+#        - Packaging: packaging/index.md
+#        - CPython Extensions: extensions/index.md
+    - Additional Resources: resources/index.md
+markdown_extensions:
+    - pymdownx.superfences
+    - pymdownx.progressbar
+    - pymdownx.details
+    - pymdownx.emoji
+    - pymdownx.keys
+    - pymdownx.smartsymbols
+    - pymdownx.magiclink:
+        repo_url_shortener: True
+        repo_url_shorthand: True
+        social_url_shorthand: True
+        # more options on magiclink https://facelessuser.github.io/pymdown-extensions/extensions/magiclink/#options
+        provider: 'github'
+    - codehilite:
+        # https://help.farbox.com/pygments.html
+        pygments_style: 'pastie'
+        linenums: False
+        # set to false to turn off pygments_style
+        noclasses: True
+    - pymdownx.tasklist
+extra_javascript:
+    - js/flowchart-loader.js
+    - js/details.js
+    - https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js
+    - https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js
+    - https://cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-min.js
+    - https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.8.0/flowchart.min.js
+extra_css:
+    - css/progress_bar.css
+    - css/details.css
+    - css/tasklist.css
+    - css/custom_tasklist.css
