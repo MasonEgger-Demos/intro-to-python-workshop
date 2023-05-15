@@ -9,6 +9,6 @@ verify_ssl = true
 
 
 mkdocs = "*"
-pymdown-extensions = "==5.0.0"
+pymdown-extensions = "==10.0"
 mkdocs-material = "*"
 
